@@ -5,7 +5,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "facebook/create-react-app",
   "keywords": [
@@ -17,5 +19,9 @@
   ],
   "devDependencies": {
     "jest": "22.4.1"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.189.0"
   }
 }
