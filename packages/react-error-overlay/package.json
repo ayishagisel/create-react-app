@@ -8,7 +8,9 @@
     "start": "cross-env NODE_ENV=development node build.js --watch",
     "test": "cross-env NODE_ENV=test jest",
     "build": "cross-env NODE_ENV=development node build.js",
-    "build:prod": "cross-env NODE_ENV=production node build.js"
+    "build:prod": "cross-env NODE_ENV=production node build.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "facebook/create-react-app",
   "license": "MIT",
@@ -79,5 +81,9 @@
       "/fixtures/",
       "setupJest.js"
     ]
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.316.1"
   }
 }
