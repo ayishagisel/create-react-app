@@ -1,0 +1,32 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - eslint > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lint-staged > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - eslint > inquirer > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > inquirer > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - eslint > table > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > conventional-changelog-cli > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - svg-term-cli > svg-term > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - svg-term-cli > term-schemes > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > conventional-recommended-bump > conventional-commits-parser > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > conventional-changelog-cli > conventional-changelog > conventional-changelog-core > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > conventional-changelog-cli > conventional-changelog > conventional-changelog-core > conventional-changelog-writer > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
+    - lerna > conventional-changelog-cli > conventional-changelog > conventional-changelog-core > conventional-commits-parser > lodash:
+        patched: '2020-05-01T08:25:21.669Z'
